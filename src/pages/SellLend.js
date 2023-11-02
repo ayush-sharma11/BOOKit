@@ -72,11 +72,15 @@ function SellLend(props) {
                                 rows="3"
                             ></textarea>
                         </div>
-                        <div className="my-3">
+                        <div className="mt-5 mb-3">
                             <label
                                 htmlFor="formFileMultiple"
-                                className="form-label"
-                            ></label>
+                                className={`form-label quicksand-medium-500 text-${
+                                    props.mode === "light" ? "dark" : "light"
+                                }`}
+                            >
+                                Upload other images of the product
+                            </label>
                             <input
                                 className={`form-control quicksand-medium-500 input-${props.mode}`}
                                 type="file"
@@ -251,11 +255,15 @@ function SellLend(props) {
                             ></textarea>
                         </div>
 
-                        <div className="my-3">
+                        <div className="mt-5 mb-3">
                             <label
                                 htmlFor="formFileMultiple"
-                                className="form-label"
-                            ></label>
+                                className={`form-label quicksand-medium-500 text-${
+                                    props.mode === "light" ? "dark" : "light"
+                                }`}
+                            >
+                                Upload other images of the product
+                            </label>
                             <input
                                 className={`form-control quicksand-medium-500 input-${props.mode}`}
                                 type="file"
