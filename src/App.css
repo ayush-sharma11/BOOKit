@@ -25,6 +25,11 @@
   font-weight: bold ;
 }
 
+/* disabled link */
+.disabled-link {
+  pointer-events: none;
+}
+
 
 /* multiple file upload - sell/lend */
 .input-dark[type=file]::file-selector-button {

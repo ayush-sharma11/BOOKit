@@ -37,7 +37,7 @@ function LowerDisplay(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is an example best seller book.
+                                This is an example of a trending book.
                             </p>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ function LowerDisplay(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is an example best seller book.
+                                This is an example of a trending book.
                             </p>
                         </div>
                     </div>
@@ -97,7 +97,7 @@ function LowerDisplay(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is an example best seller book.
+                                This is an example of a trending book.
                             </p>
                         </div>
                     </div>
@@ -127,7 +127,7 @@ function LowerDisplay(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is an example best seller book.
+                                This is an example of a trending book.
                             </p>
                         </div>
                     </div>
@@ -157,7 +157,7 @@ function LowerDisplay(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is an example best seller book.
+                                This is an example of a trending book.
                             </p>
                         </div>
                     </div>
@@ -187,7 +187,7 @@ function LowerDisplay(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is an example best seller book.
+                                This is an example of a trending book.
                             </p>
                         </div>
                     </div>
@@ -217,7 +217,7 @@ function LowerDisplay(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is an example best seller book.
+                                This is an example of a trending book.
                             </p>
                         </div>
                     </div>
@@ -247,7 +247,7 @@ function LowerDisplay(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is an example best seller book.
+                                This is an example of a trending book.
                             </p>
                         </div>
                     </div>
@@ -277,7 +277,7 @@ function LowerDisplay(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is an example best seller book.
+                                This is an example of a trending book.
                             </p>
                         </div>
                     </div>

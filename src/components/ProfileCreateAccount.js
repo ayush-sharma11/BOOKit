@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function ProfileCreateAccount(props) {
+    const [acceptTerms, setAcceptTerms] = useState(false);
+
+    const toggleAcceptTerms = () => {
+        if (acceptTerms === true) {
+            console.log(acceptTerms);
+        } else {
+            setAcceptTerms(true);
+        }
+    };
+
     return (
         <>
             <div className="my-5">
@@ -84,6 +94,7 @@ function ProfileCreateAccount(props) {
                                     props.mode === "dark" ? "#BEBEBE" : "black",
                             }}
                             id="exampleCheck1"
+                            onChange={() => toggleAcceptTerms()}
                         />
                         <label
                             style={{ marginRight: "auto" }}
@@ -101,7 +112,9 @@ function ProfileCreateAccount(props) {
                             width: "auto",
                             marginLeft: "0.70rem",
                         }}
-                        className={`btn my-3 ml-auto btn-${
+                        className={`btn ${
+                            acceptTerms === false ? "disabled-link" : ""
+                        } my-3 ml-auto btn-${
                             props.mode === "dark" ? "light" : "primary"
                         } quicksand-medium-500`}
                     >
