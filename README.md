@@ -21,4 +21,8 @@ cd [backend]
 npm i
 ```
 
+## Sidenote
+
+I had made some local mistakes in the main branch hence I downloaded the code from the previous version and made a new default branch (master).
+
 ### Feel free to contact regarding any queries
