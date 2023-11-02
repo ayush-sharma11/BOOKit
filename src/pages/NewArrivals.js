@@ -21,7 +21,7 @@ function NewArrivals(props) {
                             />
                             <div className="card-body">
                                 <h5 className="card-title quicksand-medium-500">
-                                    Card title
+                                    New Arrival
                                 </h5>
                                 <p className="card-text quicksand-medium-500">
                                     Some quick example text to build on the card
@@ -70,7 +70,7 @@ function NewArrivals(props) {
                             />
                             <div className="card-body">
                                 <h5 className="card-title quicksand-medium-500">
-                                    Card title
+                                    New Arrival
                                 </h5>
                                 <p className="card-text quicksand-medium-500">
                                     Some quick example text to build on the card
@@ -119,7 +119,7 @@ function NewArrivals(props) {
                             />
                             <div className="card-body">
                                 <h5 className="card-title quicksand-medium-500">
-                                    Card title
+                                    New Arrival
                                 </h5>
                                 <p className="card-text quicksand-medium-500">
                                     Some quick example text to build on the card
@@ -168,7 +168,7 @@ function NewArrivals(props) {
                             />
                             <div className="card-body">
                                 <h5 className="card-title quicksand-medium-500">
-                                    Card title
+                                    New Arrival
                                 </h5>
                                 <p className="card-text quicksand-medium-500">
                                     Some quick example text to build on the card
@@ -217,7 +217,7 @@ function NewArrivals(props) {
                             />
                             <div className="card-body">
                                 <h5 className="card-title quicksand-medium-500">
-                                    Card title
+                                    New Arrival
                                 </h5>
                                 <p className="card-text quicksand-medium-500">
                                     Some quick example text to build on the card
@@ -266,7 +266,7 @@ function NewArrivals(props) {
                             />
                             <div className="card-body">
                                 <h5 className="card-title quicksand-medium-500">
-                                    Card title
+                                    New Arrival
                                 </h5>
                                 <p className="card-text quicksand-medium-500">
                                     Some quick example text to build on the card
