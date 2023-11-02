@@ -1,0 +1,44 @@
+[
+    {
+        "id": 25,
+        "name": "self-help1",
+        "price": 100,
+        "imgUrl": "/images/self-help/self-help1.png",
+        "desc": "Self-Help Book desciption"
+    },
+    {
+        "id": 26,
+        "name": "self-help2",
+        "price": 100,
+        "imgUrl": "/images/self-help/self-help2.png",
+        "desc": "Self-Help Book desciption"
+    },
+    {
+        "id": 27,
+        "name": "self-help3",
+        "price": 100,
+        "imgUrl": "/images/self-help/self-help3.png",
+        "desc": "Self-Help Book desciption"
+    },
+    {
+        "id": 28,
+        "name": "self-help4",
+        "price": 100,
+        "imgUrl": "/images/self-help/self-help4.png",
+        "desc": "Self-Help Book desciption"
+    },
+    {
+        "id": 29,
+        "name": "self-help5",
+        "price": 100,
+        "imgUrl": "/images/self-help/self-help5.png",
+        "desc": "Self-Help Book desciption"
+    },
+    {
+        "id": 30,
+        "name": "self-help6",
+        "price": 100,
+        "imgUrl": "/images/self-help/self-help6.png",
+        "desc": "Self-Help Book desciption"
+    }
+]

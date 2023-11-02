@@ -1,0 +1,44 @@
+[
+    {
+        "id": 19,
+        "name": "education1",
+        "price": 100,
+        "imgUrl": "/images/education/education1.png",
+        "desc": "Education Book desciption"
+    },
+    {
+        "id": 20,
+        "name": "education2",
+        "price": 100,
+        "imgUrl": "/images/education/education2.png",
+        "desc": "Education Book desciption"
+    },
+    {
+        "id": 21,
+        "name": "education3",
+        "price": 100,
+        "imgUrl": "/images/education/education3.png",
+        "desc": "Education Book desciption"
+    },
+    {
+        "id": 22,
+        "name": "education4",
+        "price": 100,
+        "imgUrl": "/images/education/education4.png",
+        "desc": "Education Book desciption"
+    },
+    {
+        "id": 23,
+        "name": "education5",
+        "price": 100,
+        "imgUrl": "/images/education/education5.png",
+        "desc": "Education Book desciption"
+    },
+    {
+        "id": 24,
+        "name": "education6",
+        "price": 100,
+        "imgUrl": "/images/education/education6.png",
+        "desc": "Education Book desciption"
+    }
+]

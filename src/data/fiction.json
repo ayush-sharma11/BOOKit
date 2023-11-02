@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "fiction1",
+        "price": 100,
+        "imgUrl": "/images/fiction/fiction1.png",
+        "desc": "Fiction Book description"
+    },
+    {
+        "id": 2,
+        "name": "fiction2",
+        "price": 100,
+        "imgUrl": "/images/fiction/fiction2.png",
+        "desc": "Fiction Book description"
+    },
+    {
+        "id": 3,
+        "name": "fiction3",
+        "price": 100,
+        "imgUrl": "/images/fiction/fiction3.png",
+        "desc": "Fiction Book description"
+    },
+    {
+        "id": 4,
+        "name": "fiction4",
+        "price": 100,
+        "imgUrl": "/images/fiction/fiction4.png",
+        "desc": "Fiction Book description"
+    },
+    {
+        "id": 5,
+        "name": "fiction5",
+        "price": 100,
+        "imgUrl": "/images/fiction/fiction5.png",
+        "desc": "Fiction Book description"
+    },
+    {
+        "id": 6,
+        "name": "fiction6",
+        "price": 100,
+        "imgUrl": "/images/fiction/fiction6.png",
+        "desc": "Fiction Book description"
+    }
+]

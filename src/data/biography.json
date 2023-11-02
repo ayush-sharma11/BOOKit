@@ -1,0 +1,44 @@
+[
+    {
+        "id": 13,
+        "name": "biography1",
+        "price": 100,
+        "imgUrl": "/images/biography/biography1.png",
+        "desc": "Biography Book desciption"
+    },
+    {
+        "id": 14,
+        "name": "biography2",
+        "price": 100,
+        "imgUrl": "/images/biography/biography2.png",
+        "desc": "Biography Book desciption"
+    },
+    {
+        "id": 15,
+        "name": "biography3",
+        "price": 100,
+        "imgUrl": "/images/biography/biography3.png",
+        "desc": "Biography Book desciption"
+    },
+    {
+        "id": 16,
+        "name": "biography4",
+        "price": 100,
+        "imgUrl": "/images/biography/biography4.png",
+        "desc": "Biography Book desciption"
+    },
+    {
+        "id": 17,
+        "name": "biography5",
+        "price": 100,
+        "imgUrl": "/images/biography/biography5.png",
+        "desc": "Biography Book desciption"
+    },
+    {
+        "id": 18,
+        "name": "biography6",
+        "price": 100,
+        "imgUrl": "/images/biography/biography6.png",
+        "desc": "Biography Book desciption"
+    }
+]

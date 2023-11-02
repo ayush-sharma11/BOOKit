@@ -1,0 +1,44 @@
+[
+    {
+        "id": 7,
+        "name": "non-fiction1",
+        "price": 100,
+        "imgUrl": "/images/non-fiction/non-fiction1.png",
+        "desc": "Non-Fiction Book desciption"
+    },
+    {
+        "id": 8,
+        "name": "non-fiction2",
+        "price": 100,
+        "imgUrl": "/images/non-fiction/non-fiction2.png",
+        "desc": "Non-Fiction Book desciption"
+    },
+    {
+        "id": 9,
+        "name": "non-fiction3",
+        "price": 100,
+        "imgUrl": "/images/non-fiction/non-fiction3.png",
+        "desc": "Non-Fiction Book desciption"
+    },
+    {
+        "id": 10,
+        "name": "non-fiction4",
+        "price": 100,
+        "imgUrl": "/images/non-fiction/non-fiction4.png",
+        "desc": "Non-Fiction Book desciption"
+    },
+    {
+        "id": 11,
+        "name": "non-fiction5",
+        "price": 100,
+        "imgUrl": "/images/non-fiction/non-fiction5.png",
+        "desc": "Non-Fiction Book desciption"
+    },
+    {
+        "id": 12,
+        "name": "non-fiction6",
+        "price": 100,
+        "imgUrl": "/images/non-fiction/non-fiction6.png",
+        "desc": "Non-Fiction Book desciption"
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 31,
+        "name": "finance1",
+        "price": 100,
+        "imgUrl": "/images/finance/finance1.png",
+        "desc": "Finance Book desciption"
+    },
+    {
+        "id": 32,
+        "name": "finance2",
+        "price": 100,
+        "imgUrl": "/images/finance/finance2.png",
+        "desc": "Finance Book desciption"
+    },
+    {
+        "id": 33,
+        "name": "finance3",
+        "price": 100,
+        "imgUrl": "/images/finance/finance3.png",
+        "desc": "Finance Book desciption"
+    },
+    {
+        "id": 34,
+        "name": "finance4",
+        "price": 100,
+        "imgUrl": "/images/finance/finance4.png",
+        "desc": "Finance Book desciption"
+    },
+    {
+        "id": 35,
+        "name": "finance5",
+        "price": 100,
+        "imgUrl": "/images/finance/finance5.png",
+        "desc": "Finance Book desciption"
+    },
+    {
+        "id": 36,
+        "name": "finance6",
+        "price": 100,
+        "imgUrl": "/images/finance/finance6.png",
+        "desc": "Finance Book desciption"
+    }
+]
