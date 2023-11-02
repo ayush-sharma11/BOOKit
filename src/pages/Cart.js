@@ -1,4 +1,7 @@
-import { Stack, Button } from "react-bootstrap";
+import { useState } from "react";
+import { Stack, Button, Modal } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import { CartItem } from "../components/CartItem";
 import { formatCurrency } from "../utilities/formatCurrency";
@@ -13,7 +16,13 @@ import useSound from "use-sound";
 
 function Cart(props) {
     const { cartItems, cartQuantity } = useShoppingCart();
-    const [play] = useSound("/sounds/lessgoo.mp3");
+    // const [play] = useSound("/sounds/lessgoo.mp3");
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
         <>
             <div className="d-flex my-5">
@@ -73,13 +82,47 @@ function Cart(props) {
             </div>
             <div className="container my-5 d-flex justify-content-center">
                 {cartQuantity !== 0 ? (
-                    <Button
-                        variant={props.mode === "light" ? "primary" : "success"}
-                        onClick={play}
-                        className="quicksand-medium-500"
-                    >
-                        Proceed to Buy
-                    </Button>
+                    <div>
+                        <Button
+                            variant={
+                                props.mode === "light" ? "primary" : "success"
+                            }
+                            // onClick={play}
+                            onClick={handleShow}
+                            className="quicksand-medium-500"
+                        >
+                            Proceed to Buy
+                        </Button>
+
+                        <Modal show={show} onHide={handleClose}>
+                            <Modal.Header closeButton>
+                                <Modal.Title className="quicksand-medium-500">
+                                    BOOKit says
+                                </Modal.Title>
+                            </Modal.Header>
+
+                            <Modal.Body className="quicksand-medium-500">
+                                Congratulations you have successfully purchased
+                                the product!
+                            </Modal.Body>
+
+                            <Modal.Footer>
+                                <Button
+                                    className="btn btn-secondary"
+                                    onClick={handleClose}
+                                >
+                                    <i className="bi bi-x-lg"></i>
+                                </Button>
+                                <Link
+                                    to="/home"
+                                    className="btn btn-primary quicksand-medium-500"
+                                    onClick={handleClose}
+                                >
+                                    <i className="bi bi-house"></i> Home
+                                </Link>
+                            </Modal.Footer>
+                        </Modal>
+                    </div>
                 ) : (
                     <div>
                         <h2
