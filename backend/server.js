@@ -1,27 +1,23 @@
 const express = require("express");
-const mysql = require("mysql");
-const cors = require("cors");
-
 const app = express();
-app.use(cors());
 
-const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "bookit",
+const middleware = (req, res, next) => {
+    console.log("This is middleware");
+    next();
+};
+// does a task before loadin a page
+
+app.get("/", (req, res) => {
+    res.send("Home Page");
 });
 
-app.get("/", (re, res) => {
-    return res.json("From Backend");
+app.get("/profile", middleware, (req, res) => {
+    console.log("Profile with middleware");
+    res.send("Profile Page");
 });
 
-app.get("/users", (req, res) => {
-    const sql = "SELECT * FROM users";
-    db.query(sql, (err, data) => {
-        if (err) return res.json(err);
-        return res.json(data);
-    });
+app.get("/sell-lend", (req, res) => {
+    res.send("Sell Lend Page");
 });
 
-app.listen(8081, () => console.log("listening"));
+app.listen(8080, () => console.log("backend running at port 8080"));

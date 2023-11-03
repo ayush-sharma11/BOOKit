@@ -12,8 +12,6 @@ import financeItems from "../data/finance.json";
 import educationItems from "../data/education.json";
 import selfHelpItems from "../data/self-help.json";
 
-import useSound from "use-sound";
-
 function Cart(props) {
     const { cartItems, cartQuantity } = useShoppingCart();
     // const [play] = useSound("/sounds/lessgoo.mp3");
