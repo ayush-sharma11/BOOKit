@@ -31,6 +31,8 @@ import PostSellLend from "./pages/PostSellLend";
 import ProfileCreateAccount from "./components/ProfileCreateAccount";
 import ProfileLogin from "./components/ProfileLogin";
 
+import Dummy from "./pages/Dummy";
+
 const topGenres = [
     "Fiction",
     "Non Fiction",
@@ -42,6 +44,13 @@ const topGenres = [
 
 function App() {
     const [mode, setMode] = useState(localStorage.getItem("mode") || "light");
+
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        fetch("/api/books")
+            .then((response) => response.json())
+            .then((data) => setData(data));
+    }, []);
 
     useEffect(() => {
         const savedMode = localStorage.getItem("mode") || "light";
@@ -72,6 +81,11 @@ function App() {
                     >
                         <Navbar mode={mode} toggleMode={toggleMode} />
                         <Routes>
+                            <Route
+                                path="/dummy"
+                                element={<Dummy mode={mode} data={data} />}
+                            />
+
                             <Route
                                 path="/"
                                 exact

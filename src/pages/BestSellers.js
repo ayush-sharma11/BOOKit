@@ -24,9 +24,7 @@ function BestSellers(props) {
                                     Best Seller
                                 </h5>
                                 <p className="card-text quicksand-medium-500">
-                                    Some quick example text to build on the card
-                                    title and make up the bulk of the card's
-                                    content.
+                                    This is a best seller example
                                 </p>
                                 <button
                                     type="button"
@@ -73,9 +71,7 @@ function BestSellers(props) {
                                     Best Seller
                                 </h5>
                                 <p className="card-text quicksand-medium-500">
-                                    Some quick example text to build on the card
-                                    title and make up the bulk of the card's
-                                    content.
+                                    This is a best seller example
                                 </p>
                                 <button
                                     type="button"
@@ -122,9 +118,7 @@ function BestSellers(props) {
                                     Best Seller
                                 </h5>
                                 <p className="card-text quicksand-medium-500">
-                                    Some quick example text to build on the card
-                                    title and make up the bulk of the card's
-                                    content.
+                                    This is a best seller example
                                 </p>
                                 <button
                                     type="button"
@@ -171,9 +165,7 @@ function BestSellers(props) {
                                     Best Seller
                                 </h5>
                                 <p className="card-text quicksand-medium-500">
-                                    Some quick example text to build on the card
-                                    title and make up the bulk of the card's
-                                    content.
+                                    This is a best seller example
                                 </p>
                                 <button
                                     type="button"
@@ -220,9 +212,7 @@ function BestSellers(props) {
                                     Best Seller
                                 </h5>
                                 <p className="card-text quicksand-medium-500">
-                                    Some quick example text to build on the card
-                                    title and make up the bulk of the card's
-                                    content.
+                                    This is a best seller example
                                 </p>
                                 <button
                                     type="button"
@@ -269,9 +259,7 @@ function BestSellers(props) {
                                     Best Seller
                                 </h5>
                                 <p className="card-text quicksand-medium-500">
-                                    Some quick example text to build on the card
-                                    title and make up the bulk of the card's
-                                    content.
+                                    This is a best seller example
                                 </p>
                                 <button
                                     type="button"

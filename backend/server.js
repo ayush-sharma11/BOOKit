@@ -1,23 +1,21 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const app = express();
+const dataModel = require("./dataModel");
 
-const middleware = (req, res, next) => {
-    console.log("This is middleware");
-    next();
-};
-// does a task before loadin a page
+mongoose.connect("mongodb://localhost/bookit", { useNewUrlParser: true });
 
-app.get("/", (req, res) => {
-    res.send("Home Page");
+app.get("/api/data", async (req, res) => {
+    try {
+        const data = await dataModel.find();
+        res.json(data);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: "Could not fetch data" });
+    }
 });
 
-app.get("/profile", middleware, (req, res) => {
-    console.log("Profile with middleware");
-    res.send("Profile Page");
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 });
-
-app.get("/sell-lend", (req, res) => {
-    res.send("Sell Lend Page");
-});
-
-app.listen(8080, () => console.log("backend running at port 8080"));

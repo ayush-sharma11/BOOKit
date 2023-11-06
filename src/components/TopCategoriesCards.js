@@ -30,9 +30,7 @@ function TopCategoriesCards(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is a longer card with supporting text below
-                                as a natural lead-in to additional content. This
-                                content is a little bit longer.
+                                Fiction Category
                             </p>
                         </div>
                     </div>
@@ -62,7 +60,7 @@ function TopCategoriesCards(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is a short card.
+                                Non Fiction Category
                             </p>
                         </div>
                     </div>
@@ -92,8 +90,7 @@ function TopCategoriesCards(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is a longer card with supporting text below
-                                as a natural lead-in to additional content.
+                                Biography Category
                             </p>
                         </div>
                     </div>
@@ -123,9 +120,7 @@ function TopCategoriesCards(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is a longer card with supporting text below
-                                as a natural lead-in to additional content. This
-                                content is a little bit longer.
+                                Self Help Category
                             </p>
                         </div>
                     </div>
@@ -155,9 +150,7 @@ function TopCategoriesCards(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is a longer card with supporting text below
-                                as a natural lead-in to additional content. This
-                                content is a little bit longer.
+                                Education Category
                             </p>
                         </div>
                     </div>
@@ -187,9 +180,7 @@ function TopCategoriesCards(props) {
                                 Explore
                             </Link>
                             <p className="card-text quicksand-medium-500">
-                                This is a longer card with supporting text below
-                                as a natural lead-in to additional content. This
-                                content is a little bit longer.
+                                Finance Category
                             </p>
                         </div>
                     </div>
