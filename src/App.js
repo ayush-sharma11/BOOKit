@@ -12,7 +12,7 @@ import BoxSets from "./pages/BoxSets";
 import Cart from "./pages/Cart";
 import Categories from "./pages/Categories";
 import Merchandise from "./pages/Merchandise";
-import NewArrivals from "./pages/NewArrivals";
+import LatestArrivals from "./pages/LatestArrivals";
 import Profile from "./pages/Profile";
 import SellLend from "./pages/SellLend";
 import Error from "./pages/Error";
@@ -141,8 +141,8 @@ function App() {
                                 element={<PostSellLend mode={mode} />}
                             />
                             <Route
-                                path="/new-arrivals"
-                                element={<NewArrivals mode={mode} />}
+                                path="/latest-arrivals"
+                                element={<LatestArrivals mode={mode} />}
                             />
                             <Route
                                 path="/best-sellers"

@@ -155,9 +155,9 @@ function Navbar(props) {
                                                 ? "light"
                                                 : "dark"
                                         }`}
-                                        to="/new-arrivals"
+                                        to="/latest-arrivals"
                                     >
-                                        New Arrivals
+                                        Latest Arrivals
                                     </NavLink>
                                 </li>
                                 <li className="nav-item mx-1">
