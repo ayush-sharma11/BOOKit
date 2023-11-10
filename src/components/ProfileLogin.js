@@ -88,9 +88,7 @@ function ProfileLogin(props) {
                                 className={`btn btn-${
                                     props.mode === "dark" ? "dark" : "primary"
                                 } border-${
-                                    props.mode === "dark"
-                                        ? "light"
-                                        : "secondary"
+                                    props.mode === "dark" ? "light" : "primary"
                                 }`}
                                 onClick={() => toggleViewPassword()}
                             >

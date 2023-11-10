@@ -97,9 +97,7 @@ function ProfileCreateAccount(props) {
                                 className={`btn btn-${
                                     props.mode === "dark" ? "dark" : "primary"
                                 } border-${
-                                    props.mode === "dark"
-                                        ? "light"
-                                        : "secondary"
+                                    props.mode === "dark" ? "light" : "primary"
                                 }`}
                                 onClick={() => toggleViewPassword()}
                             >
@@ -144,15 +142,26 @@ function ProfileCreateAccount(props) {
                             width: "auto",
                             marginLeft: "0.70rem",
                         }}
-                        className={`btn ${
-                            acceptTerms === false ? "disabled-link" : ""
-                        } my-3 ml-auto btn-${
+                        className={`btn my-3 ml-auto btn-${
                             props.mode === "dark" ? "light" : "primary"
                         } quicksand-medium-500`}
                     >
                         Create Account
                     </Link>
                 </form>
+                <div className="container d-flex justify-content-center my-5">
+                    <Link
+                        to="/login"
+                        style={{
+                            width: "auto",
+                        }}
+                        className={`btn ml-auto btn-${
+                            props.mode === "dark" ? "light" : "primary"
+                        } quicksand-medium-500`}
+                    >
+                        Already have an account?
+                    </Link>
+                </div>
             </div>
         </>
     );
