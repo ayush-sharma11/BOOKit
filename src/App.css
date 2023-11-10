@@ -3,6 +3,7 @@
   font-family: 'Quicksand', sans-serif;;
 }
 
+/* tagline font */
 .scope-one-regular-400 {
   font-family: 'Scope One', serif;
 }
@@ -239,10 +240,10 @@
 } 
 
 /* NavLink and Navbar */
-a[class="nav-link merriweather-sans-regular-400 text-light active"]{
+a[class="nav-link quicksand-medium-500 text-light active"]{
   color: #dfcca6!important;
 }
-a[class="nav-link merriweather-sans-regular-400 text-dark active"] {
+a[class="nav-link quicksand-medium-500 text-dark active"] {
   color: #4169e1!important;
 }
 

@@ -12,6 +12,12 @@ function ProfileCreateAccount(props) {
         }
     };
 
+    const [viewPassword, setViewPassword] = useState(true);
+
+    const toggleViewPassword = () => {
+        setViewPassword(!viewPassword);
+    };
+
     return (
         <>
             <div className="my-5">
@@ -61,7 +67,7 @@ function ProfileCreateAccount(props) {
                             }`}
                         ></div>
                     </div>
-                    <div className="mb-3">
+                    <div className="password-form">
                         <label
                             htmlFor="exampleInputPassword1"
                             className={`form-label quicksand-medium-500 text-${
@@ -70,17 +76,43 @@ function ProfileCreateAccount(props) {
                         >
                             Password
                         </label>
-                        <input
-                            type="password"
-                            className="form-control"
-                            style={{
-                                backgroundColor:
-                                    props.mode === "dark" ? "#4d4d4d" : "white",
-                                WebkitTextFillColor:
-                                    props.mode === "dark" ? "#BEBEBE" : "black",
-                            }}
-                            id="exampleInputPassword1"
-                        />
+                        <div className="mb-3 input-group">
+                            <input
+                                type={viewPassword ? "password" : "text"}
+                                className="form-control"
+                                style={{
+                                    backgroundColor:
+                                        props.mode === "dark"
+                                            ? "#4d4d4d"
+                                            : "white",
+                                    WebkitTextFillColor:
+                                        props.mode === "dark"
+                                            ? "#BEBEBE"
+                                            : "black",
+                                }}
+                                id="exampleInputPassword1"
+                            />
+                            <button
+                                type="button"
+                                className={`btn btn-${
+                                    props.mode === "dark" ? "dark" : "primary"
+                                } border-${
+                                    props.mode === "dark"
+                                        ? "light"
+                                        : "secondary"
+                                }`}
+                                onClick={() => toggleViewPassword()}
+                            >
+                                <i
+                                    className={`bi bi-eye${
+                                        viewPassword ? "-slash" : ""
+                                    }`}
+                                    style={{
+                                        color: "white",
+                                    }}
+                                ></i>
+                            </button>
+                        </div>
                     </div>
                     <div className="mb-3 my-3 d-flex form-check">
                         <input

@@ -4,8 +4,8 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ShoppingCartProvider } from "./context/ShoppingCartContext";
-import Home from "./pages/Home";
 
+import Home from "./pages/Home";
 import Accessories from "./pages/Accessories";
 import BestSellers from "./pages/BestSellers";
 import BoxSets from "./pages/BoxSets";
@@ -17,7 +17,6 @@ import Profile from "./pages/Profile";
 import SellLend from "./pages/SellLend";
 import Error from "./pages/Error";
 import Wishlist from "./pages/Wishlist";
-
 import Contact from "./pages/Contact";
 import CancellationReturn from "./pages/CancellationReturn";
 import FAQ from "./pages/FAQ";
