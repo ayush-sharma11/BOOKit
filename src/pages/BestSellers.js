@@ -1,300 +1,48 @@
 import React from "react";
 
+import { Row, Col } from "react-bootstrap";
+import { StoreItem } from "../components/StoreItem";
+
+import fictionItems from "../data/fiction.json";
+import nonFictionItems from "../data/non-fiction.json";
+import biographyItems from "../data/biography.json";
+import educationItems from "../data/education.json";
+import financeItems from "../data/finance.json";
+import selfHelpItems from "../data/self-help.json";
+
 function BestSellers(props) {
     return (
         <>
             <div className="container my-5">
                 <h1
-                    className={`my-5 quicksand-medium-500 text-${
+                    className={`quicksand-medium-500 container text-start text-${
                         props.mode === "dark" ? "light" : "dark"
                     }`}
                 >
-                    Our best sellers
+                    Our Best Sellers
                 </h1>
-                <div className="row row-cols-1 row-cols-md-3 g-4">
-                    <div className="col">
-                        <div className={`card h-100 text-bg-${props.mode}`}>
-                            <img
-                                src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(14).webp"
-                                className="card-img-top"
-                                alt="..."
-                            />
-                            <div className="card-body">
-                                <h5 className="card-title quicksand-medium-500">
-                                    Best Seller
-                                </h5>
-                                <p className="card-text quicksand-medium-500">
-                                    This is a best seller example
-                                </p>
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-eye-fill"></i>
-                                </button>{" "}
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-suit-heart-fill"></i>
-                                </button>{" "}
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-cart-fill"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className={`card h-100 text-bg-${props.mode}`}>
-                            <img
-                                src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(16).webp"
-                                className="card-img-top"
-                                alt="..."
-                            />
-                            <div className="card-body">
-                                <h5 className="card-title quicksand-medium-500">
-                                    Best Seller
-                                </h5>
-                                <p className="card-text quicksand-medium-500">
-                                    This is a best seller example
-                                </p>
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-eye-fill"></i>
-                                </button>{" "}
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-suit-heart-fill"></i>
-                                </button>{" "}
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-cart-fill"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className={`card h-100 text-bg-${props.mode}`}>
-                            <img
-                                src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(17).webp"
-                                className="card-img-top"
-                                alt="..."
-                            />
-                            <div className="card-body">
-                                <h5 className="card-title quicksand-medium-500">
-                                    Best Seller
-                                </h5>
-                                <p className="card-text quicksand-medium-500">
-                                    This is a best seller example
-                                </p>
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-eye-fill"></i>
-                                </button>{" "}
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-suit-heart-fill"></i>
-                                </button>{" "}
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-cart-fill"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className={`card h-100 text-bg-${props.mode}`}>
-                            <img
-                                src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(18).webp"
-                                className="card-img-top"
-                                alt="..."
-                            />
-                            <div className="card-body">
-                                <h5 className="card-title quicksand-medium-500">
-                                    Best Seller
-                                </h5>
-                                <p className="card-text quicksand-medium-500">
-                                    This is a best seller example
-                                </p>
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-eye-fill"></i>
-                                </button>{" "}
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-suit-heart-fill"></i>
-                                </button>{" "}
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-cart-fill"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className={`card h-100 text-bg-${props.mode}`}>
-                            <img
-                                src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp"
-                                className="card-img-top"
-                                alt="..."
-                            />
-                            <div className="card-body">
-                                <h5 className="card-title quicksand-medium-500">
-                                    Best Seller
-                                </h5>
-                                <p className="card-text quicksand-medium-500">
-                                    This is a best seller example
-                                </p>
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-eye-fill"></i>
-                                </button>{" "}
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-suit-heart-fill"></i>
-                                </button>{" "}
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-cart-fill"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className={`card h-100 text-bg-${props.mode}`}>
-                            <img
-                                src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(20).webp"
-                                className="card-img-top"
-                                alt="..."
-                            />
-                            <div className="card-body">
-                                <h5 className="card-title quicksand-medium-500">
-                                    Best Seller
-                                </h5>
-                                <p className="card-text quicksand-medium-500">
-                                    This is a best seller example
-                                </p>
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-eye-fill"></i>
-                                </button>{" "}
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-suit-heart-fill"></i>
-                                </button>{" "}
-                                <button
-                                    type="button"
-                                    className={`btn btn-${
-                                        props.mode === "dark"
-                                            ? "light"
-                                            : "primary"
-                                    }`}
-                                >
-                                    <i className="bi bi-cart-fill"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div className="container my-5">
+                <Row md={2} xs={1} lg={3} className="gx-3 gy-4">
+                    <Col>
+                        <StoreItem {...fictionItems[0]} mode={props.mode} />
+                    </Col>
+                    <Col>
+                        <StoreItem {...nonFictionItems[0]} mode={props.mode} />
+                    </Col>
+                    <Col>
+                        <StoreItem {...biographyItems[0]} mode={props.mode} />
+                    </Col>
+                    <Col>
+                        <StoreItem {...educationItems[0]} mode={props.mode} />
+                    </Col>
+                    <Col>
+                        <StoreItem {...financeItems[0]} mode={props.mode} />
+                    </Col>
+                    <Col>
+                        <StoreItem {...selfHelpItems[0]} mode={props.mode} />
+                    </Col>
+                </Row>
             </div>
         </>
     );
