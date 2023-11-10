@@ -6,211 +6,60 @@ import financeItems from "../data/finance.json";
 import selfHelpItems from "../data/self-help.json";
 import "react-multi-carousel/lib/styles.css";
 
-import { Col } from "react-bootstrap";
-import Carousel from "react-multi-carousel";
+import { Col, Row } from "react-bootstrap";
 import { StoreItem } from "../components/StoreItem";
 
 function LatestArrivals(props) {
-    const responsive = {
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3,
-            slidesToSlide: 1, // optional, default to 1.
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2,
-            slidesToSlide: 1, // optional, default to 1.
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1,
-            slidesToSlide: 1, // optional, default to 1.
-        },
-    };
-
     return (
         <>
             <div className="container my-5">
-                <h1
-                    className={`quicksand-medium-500 container text-start text-${
-                        props.mode === "dark" ? "light" : "dark"
-                    }`}
-                >
-                    Fiction
-                </h1>
-                <Carousel
-                    md={2}
-                    xs={1}
-                    lg={3}
-                    className="my-5 mx-2"
-                    responsive={responsive}
-                    infinite={true}
-                    swipeable={true}
-                    draggable={true}
-                    ssr={true}
-                    showDots={false}
-                    // renderDotsOutside={true}
-                    containerclassName="carousel-container"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                >
+                <Row md={2} xs={1} lg={3} className="g-3">
                     {fictionItems.map((item) => (
                         <Col key={item.id}>
                             <StoreItem {...item} mode={props.mode} />
                         </Col>
                     ))}
-                </Carousel>
-            </div>
-
-            <div className="container my-5">
-                <h1
-                    className={`quicksand-medium-500 container text-start text-${
-                        props.mode === "dark" ? "light" : "dark"
-                    }`}
-                >
-                    Non Fiction
-                </h1>
-                <Carousel
-                    md={2}
-                    xs={1}
-                    lg={3}
-                    className="my-5 mx-2"
-                    responsive={responsive}
-                    infinite={true}
-                    swipeable={true}
-                    draggable={true}
-                    ssr={true}
-                    showDots={false}
-                    // renderDotsOutside={true}
-                    containerclassName="carousel-container"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                >
+                </Row>
+                <div className="latest-arrivals-card-gap my-4"></div>
+                <Row md={2} xs={1} lg={3} className="g-3">
                     {nonFictionItems.map((item) => (
                         <Col key={item.id}>
                             <StoreItem {...item} mode={props.mode} />
                         </Col>
                     ))}
-                </Carousel>
-            </div>
-            <div className="container my-5">
-                <h1
-                    className={`quicksand-medium-500 container text-start text-${
-                        props.mode === "dark" ? "light" : "dark"
-                    }`}
-                >
-                    Biography
-                </h1>
-                <Carousel
-                    md={2}
-                    xs={1}
-                    lg={3}
-                    className="my-5 mx-2"
-                    responsive={responsive}
-                    infinite={true}
-                    swipeable={true}
-                    draggable={true}
-                    ssr={true}
-                    showDots={false}
-                    // renderDotsOutside={true}
-                    containerclassName="carousel-container"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                >
+                </Row>
+                <div className="latest-arrivals-card-gap my-4"></div>
+                <Row md={2} xs={1} lg={3} className="g-3">
                     {biographyItems.map((item) => (
                         <Col key={item.id}>
                             <StoreItem {...item} mode={props.mode} />
                         </Col>
                     ))}
-                </Carousel>
-            </div>
-            <div className="container my-5">
-                <h1
-                    className={`quicksand-medium-500 container text-start text-${
-                        props.mode === "dark" ? "light" : "dark"
-                    }`}
-                >
-                    Self Help
-                </h1>
-                <Carousel
-                    md={2}
-                    xs={1}
-                    lg={3}
-                    className="my-5 mx-2"
-                    responsive={responsive}
-                    infinite={true}
-                    swipeable={true}
-                    draggable={true}
-                    ssr={true}
-                    showDots={false}
-                    // renderDotsOutside={true}
-                    containerclassName="carousel-container"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                >
-                    {selfHelpItems.map((item) => (
-                        <Col key={item.id}>
-                            <StoreItem {...item} mode={props.mode} />
-                        </Col>
-                    ))}
-                </Carousel>
-            </div>
-            <div className="container my-5">
-                <h1
-                    className={`quicksand-medium-500 container text-start text-${
-                        props.mode === "dark" ? "light" : "dark"
-                    }`}
-                >
-                    Education
-                </h1>
-                <Carousel
-                    md={2}
-                    xs={1}
-                    lg={3}
-                    className="my-5 mx-2"
-                    responsive={responsive}
-                    infinite={true}
-                    swipeable={true}
-                    draggable={true}
-                    ssr={true}
-                    showDots={false}
-                    // renderDotsOutside={true}
-                    containerclassName="carousel-container"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                >
+                </Row>
+                <div className="latest-arrivals-card-gap my-4"></div>
+                <Row md={2} xs={1} lg={3} className="g-3">
                     {educationItems.map((item) => (
                         <Col key={item.id}>
                             <StoreItem {...item} mode={props.mode} />
                         </Col>
                     ))}
-                </Carousel>
-            </div>
-            <div className="container my-5">
-                <h1
-                    className={`quicksand-medium-500 container text-start text-${
-                        props.mode === "dark" ? "light" : "dark"
-                    }`}
-                >
-                    Finance
-                </h1>
-                <Carousel
-                    md={2}
-                    xs={1}
-                    lg={3}
-                    className="my-5 mx-2"
-                    responsive={responsive}
-                    infinite={true}
-                    swipeable={true}
-                    draggable={true}
-                    ssr={true}
-                    showDots={false}
-                    // renderDotsOutside={true}
-                    containerclassName="carousel-container"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                >
+                </Row>
+                <div className="latest-arrivals-card-gap my-4"></div>
+                <Row md={2} xs={1} lg={3} className="g-3">
                     {financeItems.map((item) => (
                         <Col key={item.id}>
                             <StoreItem {...item} mode={props.mode} />
                         </Col>
                     ))}
-                </Carousel>
+                </Row>
+                <div className="latest-arrivals-card-gap my-4"></div>
+                <Row md={2} xs={1} lg={3} className="g-3">
+                    {selfHelpItems.map((item) => (
+                        <Col key={item.id}>
+                            <StoreItem {...item} mode={props.mode} />
+                        </Col>
+                    ))}
+                </Row>
             </div>
         </>
     );
