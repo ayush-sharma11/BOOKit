@@ -43,38 +43,40 @@ function Cart(props) {
                         <CartItem key={item.id} {...item} />
                     ))}
                     <div
-                        className={`ms-auto quicksand-medium-500 text-${
+                        className={`ms-auto scope-one-regular-400 text-${
                             props.mode === "dark" ? "light" : "dark"
                         } fw-bold fs-5`}
                     >
-                        Total:{" "}
-                        {formatCurrency(
-                            cartItems.reduce((total, cartItem) => {
-                                const item =
-                                    fictionItems.find(
-                                        (i) => i.id === cartItem.id
-                                    ) ||
-                                    nonFictionItems.find(
-                                        (i) => i.id === cartItem.id
-                                    ) ||
-                                    biographyItems.find(
-                                        (i) => i.id === cartItem.id
-                                    ) ||
-                                    financeItems.find(
-                                        (i) => i.id === cartItem.id
-                                    ) ||
-                                    selfHelpItems.find(
-                                        (i) => i.id === cartItem.id
-                                    ) ||
-                                    educationItems.find(
-                                        (i) => i.id === cartItem.id
+                        <p style={{ fontSize: "2rem" }}>
+                            Total:{" "}
+                            {formatCurrency(
+                                cartItems.reduce((total, cartItem) => {
+                                    const item =
+                                        fictionItems.find(
+                                            (i) => i.id === cartItem.id
+                                        ) ||
+                                        nonFictionItems.find(
+                                            (i) => i.id === cartItem.id
+                                        ) ||
+                                        biographyItems.find(
+                                            (i) => i.id === cartItem.id
+                                        ) ||
+                                        financeItems.find(
+                                            (i) => i.id === cartItem.id
+                                        ) ||
+                                        selfHelpItems.find(
+                                            (i) => i.id === cartItem.id
+                                        ) ||
+                                        educationItems.find(
+                                            (i) => i.id === cartItem.id
+                                        );
+                                    return (
+                                        total +
+                                        (item?.price || 0) * cartItem.quantity
                                     );
-                                return (
-                                    total +
-                                    (item?.price || 0) * cartItem.quantity
-                                );
-                            }, 0)
-                        )}{" "}
+                                }, 0)
+                            )}{" "}
+                        </p>
                     </div>
                 </Stack>
             </div>
