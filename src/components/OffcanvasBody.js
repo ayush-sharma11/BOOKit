@@ -9,7 +9,7 @@ function OffcanvasBody(props) {
                     <div className="container my-2 ">
                         <p>
                             <Link
-                                to="profile"
+                                to="/profile"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -19,7 +19,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="wishlist"
+                                to="/wishlist"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -29,7 +29,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="Cart"
+                                to="/cart"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -44,7 +44,7 @@ function OffcanvasBody(props) {
                     <div className="container my-2 ">
                         <p>
                             <Link
-                                to="categories"
+                                to="/categories"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -54,7 +54,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="sell-lend"
+                                to="/sell-lend"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -64,7 +64,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="new-arrivals"
+                                to="/new-arrivals"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -74,7 +74,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="best-sellers"
+                                to="/best-sellers"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -84,7 +84,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="box-sets"
+                                to="/box-sets"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -94,7 +94,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="merchandise"
+                                to="/merchandise"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -104,7 +104,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="accessories"
+                                to="/accessories"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -119,7 +119,7 @@ function OffcanvasBody(props) {
                     <div className="container my-2 ">
                         <p>
                             <Link
-                                to="contact"
+                                to="/contact"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -129,7 +129,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="about"
+                                to="/about"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -139,7 +139,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="faq"
+                                to="/faq"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -149,7 +149,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="help"
+                                to="/help"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -159,7 +159,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="beliefs"
+                                to="/beliefs"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -169,7 +169,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="policy"
+                                to="/policy"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -179,7 +179,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="terms"
+                                to="/terms"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
@@ -189,7 +189,7 @@ function OffcanvasBody(props) {
                         </p>
                         <p>
                             <Link
-                                to="cancellation-return"
+                                to="/cancellation-return"
                                 className={`quicksand-medium-500 link-underline-primary fw-normal text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 } text-decoration-none`}
