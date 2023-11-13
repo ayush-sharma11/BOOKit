@@ -208,12 +208,12 @@ function Navbar(props) {
                             <div className="container d-flex align-items-center">
                                 {props.mode === "light" ? (
                                     <i
-                                        className="bi  bi-sun"
+                                        className="bi bi-sun icon-shadow-yellow"
                                         style={{ color: "black" }}
                                     ></i>
                                 ) : (
                                     <i
-                                        className="bi bi-moon"
+                                        className="bi bi-moon icon-shadow-white"
                                         style={{ color: "white" }}
                                     ></i>
                                 )}

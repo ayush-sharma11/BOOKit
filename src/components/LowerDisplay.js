@@ -25,14 +25,9 @@ function LowerDisplay(props) {
                             </h5>
                             <Link
                                 to="/best-sellers"
-                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-outline-${
-                                    props.mode === "dark" ? "light" : "dark"
+                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-${
+                                    props.mode === "dark" ? "light" : "primary"
                                 }`}
-                                style={{
-                                    backgroundColor:
-                                        props.mode === "dark" ? "#4d4d4d" : "",
-                                }}
-                                type="submit"
                             >
                                 Explore
                             </Link>
@@ -55,14 +50,9 @@ function LowerDisplay(props) {
                             </h5>
                             <Link
                                 to="/best-sellers"
-                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-outline-${
-                                    props.mode === "dark" ? "light" : "dark"
+                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-${
+                                    props.mode === "dark" ? "light" : "primary"
                                 }`}
-                                style={{
-                                    backgroundColor:
-                                        props.mode === "dark" ? "#4d4d4d" : "",
-                                }}
-                                type="submit"
                             >
                                 Explore
                             </Link>
@@ -85,14 +75,9 @@ function LowerDisplay(props) {
                             </h5>
                             <Link
                                 to="/best-sellers"
-                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-outline-${
-                                    props.mode === "dark" ? "light" : "dark"
+                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-${
+                                    props.mode === "dark" ? "light" : "primary"
                                 }`}
-                                style={{
-                                    backgroundColor:
-                                        props.mode === "dark" ? "#4d4d4d" : "",
-                                }}
-                                type="submit"
                             >
                                 Explore
                             </Link>
@@ -115,14 +100,9 @@ function LowerDisplay(props) {
                             </h5>
                             <Link
                                 to="/best-sellers"
-                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-outline-${
-                                    props.mode === "dark" ? "light" : "dark"
+                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-${
+                                    props.mode === "dark" ? "light" : "primary"
                                 }`}
-                                style={{
-                                    backgroundColor:
-                                        props.mode === "dark" ? "#4d4d4d" : "",
-                                }}
-                                type="submit"
                             >
                                 Explore
                             </Link>
@@ -145,14 +125,9 @@ function LowerDisplay(props) {
                             </h5>
                             <Link
                                 to="/best-sellers"
-                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-outline-${
-                                    props.mode === "dark" ? "light" : "dark"
+                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-${
+                                    props.mode === "dark" ? "light" : "primary"
                                 }`}
-                                style={{
-                                    backgroundColor:
-                                        props.mode === "dark" ? "#4d4d4d" : "",
-                                }}
-                                type="submit"
                             >
                                 Explore
                             </Link>
@@ -175,14 +150,9 @@ function LowerDisplay(props) {
                             </h5>
                             <Link
                                 to="/best-sellers"
-                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-outline-${
-                                    props.mode === "dark" ? "light" : "dark"
+                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-${
+                                    props.mode === "dark" ? "light" : "primary"
                                 }`}
-                                style={{
-                                    backgroundColor:
-                                        props.mode === "dark" ? "#4d4d4d" : "",
-                                }}
-                                type="submit"
                             >
                                 Explore
                             </Link>
@@ -205,14 +175,9 @@ function LowerDisplay(props) {
                             </h5>
                             <Link
                                 to="/best-sellers"
-                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-outline-${
-                                    props.mode === "dark" ? "light" : "dark"
+                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-${
+                                    props.mode === "dark" ? "light" : "primary"
                                 }`}
-                                style={{
-                                    backgroundColor:
-                                        props.mode === "dark" ? "#4d4d4d" : "",
-                                }}
-                                type="submit"
                             >
                                 Explore
                             </Link>
@@ -235,14 +200,9 @@ function LowerDisplay(props) {
                             </h5>
                             <Link
                                 to="/best-sellers"
-                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-outline-${
-                                    props.mode === "dark" ? "light" : "dark"
+                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-${
+                                    props.mode === "dark" ? "light" : "primary"
                                 }`}
-                                style={{
-                                    backgroundColor:
-                                        props.mode === "dark" ? "#4d4d4d" : "",
-                                }}
-                                type="submit"
                             >
                                 Explore
                             </Link>
@@ -265,14 +225,9 @@ function LowerDisplay(props) {
                             </h5>
                             <Link
                                 to="/best-sellers"
-                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-outline-${
-                                    props.mode === "dark" ? "light" : "dark"
+                                className={`btn quicksand-medium-500 btn-sm d-inline float-end btn-${
+                                    props.mode === "dark" ? "light" : "primary"
                                 }`}
-                                style={{
-                                    backgroundColor:
-                                        props.mode === "dark" ? "#4d4d4d" : "",
-                                }}
-                                type="submit"
                             >
                                 Explore
                             </Link>

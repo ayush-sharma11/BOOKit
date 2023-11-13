@@ -181,7 +181,11 @@ function Contact(props) {
                 </h4>
                 <section className="mb-4 my-3">
                     <Link
-                        className="btn btn-dark btn-floating m-1 mx-3"
+                        className={`btn btn-${
+                            props.mode === "dark" ? "dark" : "success"
+                        } btn-floating m-1 mx-3 btn-shadow-${
+                            props.mode === "dark" ? "white" : "green"
+                        }`}
                         to="https://www.facebook.com/"
                         role="button"
                     >
@@ -189,7 +193,11 @@ function Contact(props) {
                     </Link>
 
                     <Link
-                        className="btn btn-dark btn-floating m-1 mx-3"
+                        className={`btn btn-${
+                            props.mode === "dark" ? "dark" : "success"
+                        } btn-floating m-1 mx-3 btn-shadow-${
+                            props.mode === "dark" ? "white" : "green"
+                        }`}
                         to="https://www.whatsapp.com/"
                         role="button"
                     >
@@ -197,7 +205,11 @@ function Contact(props) {
                     </Link>
 
                     <Link
-                        className="btn btn-dark btn-floating m-1 mx-3"
+                        className={`btn btn-${
+                            props.mode === "dark" ? "dark" : "success"
+                        } btn-floating m-1 mx-3 btn-shadow-${
+                            props.mode === "dark" ? "white" : "green"
+                        }`}
                         to="https://www.instagram.com/"
                         role="button"
                     >
@@ -205,7 +217,11 @@ function Contact(props) {
                     </Link>
 
                     <Link
-                        className="btn btn-dark btn-floating m-1 mx-3"
+                        className={`btn btn-${
+                            props.mode === "dark" ? "dark" : "success"
+                        } btn-floating m-1 mx-3 btn-shadow-${
+                            props.mode === "dark" ? "white" : "green"
+                        }`}
                         to="https://www.twitter.com/"
                         role="button"
                     >
@@ -213,7 +229,11 @@ function Contact(props) {
                     </Link>
 
                     <Link
-                        className="btn btn-dark btn-floating m-1 mx-3"
+                        className={`btn btn-${
+                            props.mode === "dark" ? "dark" : "success"
+                        } btn-floating m-1 mx-3 btn-shadow-${
+                            props.mode === "dark" ? "white" : "green"
+                        }`}
                         to="https://www.linkedin.com/"
                         role="button"
                     >
@@ -221,7 +241,11 @@ function Contact(props) {
                     </Link>
 
                     <Link
-                        className="btn btn-dark btn-floating m-1 mx-3"
+                        className={`btn btn-${
+                            props.mode === "dark" ? "dark" : "success"
+                        } btn-floating m-1 mx-3 btn-shadow-${
+                            props.mode === "dark" ? "white" : "green"
+                        }`}
                         to="https://www.dicord.com/"
                         role="button"
                     >

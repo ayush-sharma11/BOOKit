@@ -20,6 +20,22 @@
   color: white;
 }
 
+/* shadow */
+.btn-shadow-white:hover {
+  box-shadow: 0 0 5px white;
+}
+
+.btn-shadow-green:hover {
+  box-shadow: 0 0 5px green;
+}
+
+.icon-shadow-white:hover {
+  text-shadow: 0 0 5px white;
+}
+
+.icon-shadow-yellow:hover{
+  text-shadow: 0 0 15px yellow, 0 0 15px yellow, 0 0 15px yellow, 0 0 15px yellow, 0 0 15px yellow;
+}
 
 /* bold li */
 .bold-li::marker {

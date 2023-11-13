@@ -8,7 +8,7 @@ function Footer(props) {
                 <div className="container p-4">
                     <section className="mb-4">
                         <Link
-                            className="btn btn-dark btn-floating m-1"
+                            className="btn btn-dark btn-floating btn-shadow-white m-1"
                             to="https://www.facebook.com/"
                             role="button"
                         >
@@ -16,7 +16,7 @@ function Footer(props) {
                         </Link>
 
                         <Link
-                            className="btn btn-dark btn-floating m-1"
+                            className="btn btn-dark btn-floating btn-shadow-white m-1"
                             to="https://www.whatsapp.com/"
                             role="button"
                         >
@@ -24,7 +24,7 @@ function Footer(props) {
                         </Link>
 
                         <Link
-                            className="btn btn-dark btn-floating m-1"
+                            className="btn btn-dark btn-floating btn-shadow-white m-1"
                             to="https://www.instagram.com/bookit.site"
                             role="button"
                         >
@@ -32,7 +32,7 @@ function Footer(props) {
                         </Link>
 
                         <Link
-                            className="btn btn-dark btn-floating m-1"
+                            className="btn btn-dark btn-floating btn-shadow-white m-1"
                             to="https://www.twitter.com/"
                             role="button"
                         >
@@ -40,7 +40,7 @@ function Footer(props) {
                         </Link>
 
                         <Link
-                            className="btn btn-dark btn-floating m-1"
+                            className="btn btn-dark btn-floating btn-shadow-white m-1"
                             to="https://www.linkedin.com/"
                             role="button"
                         >
@@ -48,7 +48,7 @@ function Footer(props) {
                         </Link>
 
                         <Link
-                            className="btn btn-dark btn-floating m-1"
+                            className="btn btn-dark btn-floating btn-shadow-white m-1"
                             to="https://www.dicord.com/"
                             role="button"
                         >
