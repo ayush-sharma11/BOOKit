@@ -36,6 +36,8 @@ function Search(props) {
                             style={{
                                 backgroundColor:
                                     props.mode === "dark" ? "#4d4d4d" : "white",
+                                borderColor:
+                                    props.mode === "dark" ? "#fff" : "#d5d9dd",
                             }}
                             type="submit"
                         >
