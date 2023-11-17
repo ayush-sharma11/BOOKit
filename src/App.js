@@ -68,6 +68,42 @@ function App() {
         }
     };
 
+    if (mode === "light") {
+        document.documentElement.style.setProperty(
+            "--scrollbar-track-color",
+            "#D3D3D3"
+        );
+        document.documentElement.style.setProperty(
+            "--scrollbar-thumb-color",
+            "#3F5DBB"
+        );
+        document.documentElement.style.setProperty(
+            "--scrollbar-thumb-hover-color",
+            "#9AAEFB"
+        );
+        document.documentElement.style.setProperty(
+            "--scrollbar-button-color",
+            "#00008B"
+        );
+    } else {
+        document.documentElement.style.setProperty(
+            "--scrollbar-track-color",
+            "#4D4D4D"
+        );
+        document.documentElement.style.setProperty(
+            "--scrollbar-thumb-color",
+            "gray"
+        );
+        document.documentElement.style.setProperty(
+            "--scrollbar-thumb-hover-color",
+            "gainsboro"
+        );
+        document.documentElement.style.setProperty(
+            "--scrollbar-button-color",
+            "#1A1A1A"
+        );
+    }
+
     return (
         <>
             <ShoppingCartProvider>
