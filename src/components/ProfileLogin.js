@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { Link } from "react-router-dom";
 
 function ProfileLogin(props) {
@@ -11,72 +10,36 @@ function ProfileLogin(props) {
 
     return (
         <>
-            <div className="my-5">
+            <div className="container">
                 <h2
-                    className={`quicksand-medium-500 text-center text-${
+                    className={`quicksand-medium-500 mt-5 text-center text-${
                         props.mode === "dark" ? "light" : "dark"
                     }`}
                 >
                     Login
                 </h2>
-                <form
-                    className="row my-3"
-                    style={{
-                        position: "relative",
-                        margin: "auto",
-                        width: "40%",
-                    }}
-                >
-                    <div
-                        className="mb-3"
-                        style={{ width: "75%", margin: "auto" }}
+                <div className="my-5 col d-flex align-items-center">
+                    <form
+                        className="row my-3 mx-auto"
+                        style={{
+                            position: "relative",
+                            width: "40%",
+                        }}
                     >
-                        <label
-                            htmlFor="exampleInputEmail1"
-                            className={`form-label text-${
-                                props.mode === "dark" ? "light" : "dark"
-                            } quicksand-medium-500`}
-                        >
-                            Email address
-                        </label>
-                        <input
-                            type="email"
-                            className={`form-control text-${
-                                props.mode === "dark" ? "light" : "dark"
-                            }`}
-                            style={{
-                                backgroundColor:
-                                    props.mode === "dark" ? "#4d4d4d" : "white",
-                                WebkitTextFillColor:
-                                    props.mode === "dark" ? "#BEBEBE" : "black",
-                            }}
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                        />
-                        <div
-                            id="emailHelp"
-                            className={`form-text quicksand-medium-500 text-${
-                                props.mode === "dark" ? "light" : "dark"
-                            }`}
-                        ></div>
-                    </div>
-
-                    <div
-                        className="password-form"
-                        style={{ width: "75%", margin: "auto" }}
-                    >
-                        <label
-                            htmlFor="exampleInputPassword1"
-                            className={`form-label quicksand-medium-500 text-${
-                                props.mode === "dark" ? "light" : "dark"
-                            }`}
-                        >
-                            Password
-                        </label>
-                        <div className="mb-3 input-group">
+                        <div className="mb-3 w-100">
+                            <label
+                                htmlFor="exampleInputEmail1"
+                                className={`form-label text-${
+                                    props.mode === "dark" ? "light" : "dark"
+                                } quicksand-medium-500`}
+                            >
+                                Email address
+                            </label>
                             <input
-                                type={viewPassword ? "password" : "text"}
-                                className="form-control"
+                                type="email"
+                                className={`form-control text-${
+                                    props.mode === "dark" ? "light" : "dark"
+                                }`}
                                 style={{
                                     backgroundColor:
                                         props.mode === "dark"
@@ -87,83 +50,121 @@ function ProfileLogin(props) {
                                             ? "#BEBEBE"
                                             : "black",
                                 }}
-                                id="exampleInputPassword1"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
                             />
-                            <button
-                                type="button"
-                                className={`btn btn-${
-                                    props.mode === "dark" ? "dark" : "primary"
-                                } border-${
-                                    props.mode === "dark" ? "light" : "primary"
+                            <div
+                                id="emailHelp"
+                                className={`form-text quicksand-medium-500 text-${
+                                    props.mode === "dark" ? "light" : "dark"
                                 }`}
-                                onClick={() => toggleViewPassword()}
-                            >
-                                <i
-                                    className={`bi bi-eye${
-                                        viewPassword ? "-slash" : ""
-                                    }`}
-                                    style={{
-                                        color: "white",
-                                    }}
-                                ></i>
-                            </button>
+                            ></div>
                         </div>
-                    </div>
 
-                    <div
-                        className="mb-3 my-3 me-0 d-flex form-check"
-                        style={{ marginLeft: "5rem", width: "75%" }}
-                    >
-                        <input
-                            type="checkbox"
-                            className="form-check-input pl-5"
-                            style={{
-                                marginLeft: "-0.75rem",
-                                backgroundColor:
-                                    props.mode === "dark" ? "#4d4d4d" : "white",
-                                WebkitTextFillColor:
-                                    props.mode === "dark" ? "#BEBEBE" : "black",
-                            }}
-                            id="exampleCheck1"
-                        />
-                        <label
-                            className={`form-check-label mx-2 quicksand-medium-500 text-${
-                                props.mode === "dark" ? "light" : "dark"
-                            }`}
-                            htmlFor="exampleCheck1"
+                        <div className="password-form w-100">
+                            <label
+                                htmlFor="exampleInputPassword1"
+                                className={`form-label quicksand-medium-500 text-${
+                                    props.mode === "dark" ? "light" : "dark"
+                                }`}
+                            >
+                                Password
+                            </label>
+                            <div className="mb-3 input-group">
+                                <input
+                                    type={viewPassword ? "password" : "text"}
+                                    className="form-control"
+                                    style={{
+                                        backgroundColor:
+                                            props.mode === "dark"
+                                                ? "#4d4d4d"
+                                                : "white",
+                                        WebkitTextFillColor:
+                                            props.mode === "dark"
+                                                ? "#BEBEBE"
+                                                : "black",
+                                    }}
+                                    id="exampleInputPassword1"
+                                />
+                                <button
+                                    type="button"
+                                    className={`btn btn-${
+                                        props.mode === "dark"
+                                            ? "dark"
+                                            : "primary"
+                                    } border-${
+                                        props.mode === "dark"
+                                            ? "light"
+                                            : "primary"
+                                    }`}
+                                    onClick={() => toggleViewPassword()}
+                                >
+                                    <i
+                                        className={`bi bi-eye${
+                                            viewPassword ? "-slash" : ""
+                                        }`}
+                                        style={{
+                                            color: "white",
+                                        }}
+                                    ></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div
+                            className="container col-10 d-flex justify-content-start"
+                            style={{ width: "100%" }}
                         >
-                            Remember me
-                        </label>
-                    </div>
-                    <div className="buffer">
-                        <br />
-                    </div>
-                    <Link
-                        to="/profile"
-                        style={{
-                            width: "auto",
-                            marginLeft: "5.75rem",
-                        }}
-                        className={`btn ml-auto btn-${
-                            props.mode === "dark" ? "light" : "primary"
-                        } quicksand-medium-500`}
-                    >
-                        Login
-                    </Link>
-                    <div className="container d-flex justify-content-center my-5">
-                        <Link
-                            to="/create-account"
-                            style={{
-                                width: "auto",
-                            }}
-                            className={`btn ml-auto btn-${
-                                props.mode === "dark" ? "light" : "primary"
-                            } quicksand-medium-500`}
-                        >
-                            Don't have an account?
-                        </Link>
-                    </div>
-                </form>
+                            <div className="form-check">
+                                <input
+                                    type="checkbox"
+                                    className="form-check-input pl-5 col-1"
+                                    style={{
+                                        backgroundColor:
+                                            props.mode === "dark"
+                                                ? "#4d4d4d"
+                                                : "white",
+                                        WebkitTextFillColor:
+                                            props.mode === "dark"
+                                                ? "#BEBEBE"
+                                                : "black",
+                                    }}
+                                    id="exampleCheck1"
+                                />
+                                <label
+                                    className={`form-check-label quicksand-medium-500 col text-${
+                                        props.mode === "dark" ? "light" : "dark"
+                                    }`}
+                                    htmlFor="exampleCheck1"
+                                >
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+
+                        <div className="d-flex justify-content-center mt-5">
+                            <Link
+                                to="/profile"
+                                className={`btn btn-${
+                                    props.mode === "dark" ? "light" : "primary"
+                                } quicksand-medium-500`}
+                            >
+                                Login
+                            </Link>
+                        </div>
+
+                        <div className="container d-flex justify-content-center my-5">
+                            <Link
+                                to="/create-account"
+                                className={`btn ml-auto btn-${
+                                    props.mode === "dark" ? "light" : "primary"
+                                } quicksand-medium-500`}
+                            >
+                                Don't have an account?
+                            </Link>
+                        </div>
+                    </form>
+                </div>
             </div>
         </>
     );
