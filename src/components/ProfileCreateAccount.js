@@ -37,7 +37,7 @@ function ProfileCreateAccount(props) {
                             </label>
                             <input
                                 type="text"
-                                className={`form-control text-${
+                                className={`form-control quicksand-medium-500 text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 }`}
                                 style={{
@@ -66,7 +66,7 @@ function ProfileCreateAccount(props) {
                             </label>
                             <input
                                 type="email"
-                                className={`form-control text-${
+                                className={`form-control quicksand-medium-500 text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 }`}
                                 style={{
@@ -94,8 +94,8 @@ function ProfileCreateAccount(props) {
                                 Phone Number
                             </label>
                             <input
-                                type="number"
-                                className={`form-control text-${
+                                type="text"
+                                className={`form-control quicksand-medium-500 text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 }`}
                                 style={{
@@ -123,7 +123,7 @@ function ProfileCreateAccount(props) {
                                 Address
                             </label>
                             <textarea
-                                className={`form-control text-${
+                                className={`form-control quicksand-medium-500 text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 }`}
                                 style={{
@@ -155,7 +155,7 @@ function ProfileCreateAccount(props) {
                             <div className="mb-3 input-group">
                                 <input
                                     type={acceptTerms ? "password" : "text"}
-                                    className="form-control"
+                                    className="form-control quicksand-medium-500"
                                     style={{
                                         backgroundColor:
                                             props.mode === "dark"

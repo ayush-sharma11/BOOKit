@@ -37,7 +37,7 @@ function ProfileLogin(props) {
                             </label>
                             <input
                                 type="email"
-                                className={`form-control text-${
+                                className={`form-control quicksand-medium-500 text-${
                                     props.mode === "dark" ? "light" : "dark"
                                 }`}
                                 style={{
@@ -67,7 +67,7 @@ function ProfileLogin(props) {
                             <div className="mb-3 input-group">
                                 <input
                                     type={viewPassword ? "password" : "text"}
-                                    className="form-control"
+                                    className="form-control quicksand-medium-500"
                                     style={{
                                         backgroundColor:
                                             props.mode === "dark"
