@@ -53,12 +53,6 @@ function ProfileLogin(props) {
                                 id="exampleInputEmail1"
                                 aria-describedby="emailHelp"
                             />
-                            <div
-                                id="emailHelp"
-                                className={`form-text quicksand-medium-500 text-${
-                                    props.mode === "dark" ? "light" : "dark"
-                                }`}
-                            ></div>
                         </div>
 
                         <div className="password-form w-100">
