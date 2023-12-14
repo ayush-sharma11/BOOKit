@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function ProfileCreateAccount(props) {
-    const [acceptTerms, setAcceptTerms] = useState(true);
+    const [isPasswordVisible, setIsPasswordVisible] = useState(true);
+    const toggleIsPasswordVisible = () => {
+        setIsPasswordVisible(!isPasswordVisible);
+    };
 
-    const toggleAcceptTerms = () => {
+    const [acceptTerms, setAcceptTerms] = useState(false);
+    const toggleAccpetTerms = () => {
         setAcceptTerms(!acceptTerms);
     };
 
@@ -154,7 +158,9 @@ function ProfileCreateAccount(props) {
                             </label>
                             <div className="mb-3 input-group">
                                 <input
-                                    type={acceptTerms ? "password" : "text"}
+                                    type={
+                                        isPasswordVisible ? "password" : "text"
+                                    }
                                     className="form-control quicksand-medium-500"
                                     style={{
                                         backgroundColor:
@@ -179,11 +185,11 @@ function ProfileCreateAccount(props) {
                                             ? "light"
                                             : "primary"
                                     }`}
-                                    onClick={() => toggleAcceptTerms()}
+                                    onClick={() => toggleIsPasswordVisible()}
                                 >
                                     <i
                                         className={`bi bi-eye${
-                                            acceptTerms ? "-slash" : ""
+                                            isPasswordVisible ? "-slash" : ""
                                         }`}
                                         style={{
                                             color: "white",
@@ -212,6 +218,7 @@ function ProfileCreateAccount(props) {
                                                 : "black",
                                     }}
                                     id="exampleCheck1"
+                                    onChange={toggleAccpetTerms}
                                 />
                                 <label
                                     className={`form-check-label quicksand-medium-500 col text-${
@@ -219,7 +226,8 @@ function ProfileCreateAccount(props) {
                                     }`}
                                     htmlFor="exampleCheck1"
                                 >
-                                    Remember me
+                                    I (have read and hereby) accept the terms &
+                                    conditions
                                 </label>
                             </div>
                         </div>
@@ -229,9 +237,11 @@ function ProfileCreateAccount(props) {
                                 to="/profile"
                                 className={`btn btn-${
                                     props.mode === "dark" ? "light" : "primary"
-                                } quicksand-medium-500`}
+                                } quicksand-medium-500 ${
+                                    acceptTerms ? "" : "disabled"
+                                }`}
                             >
-                                Login
+                                Sign Up
                             </Link>
                         </div>
 
