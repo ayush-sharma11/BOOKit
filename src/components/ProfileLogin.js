@@ -27,7 +27,10 @@ function ProfileLogin(props) {
                         width: "40%",
                     }}
                 >
-                    <div className="mb-3">
+                    <div
+                        className="mb-3"
+                        style={{ width: "75%", margin: "auto" }}
+                    >
                         <label
                             htmlFor="exampleInputEmail1"
                             className={`form-label text-${
@@ -58,7 +61,10 @@ function ProfileLogin(props) {
                         ></div>
                     </div>
 
-                    <div className="password-form">
+                    <div
+                        className="password-form"
+                        style={{ width: "75%", margin: "auto" }}
+                    >
                         <label
                             htmlFor="exampleInputPassword1"
                             className={`form-label quicksand-medium-500 text-${
@@ -104,7 +110,10 @@ function ProfileLogin(props) {
                         </div>
                     </div>
 
-                    <div className="mb-3 my-3 d-flex form-check">
+                    <div
+                        className="mb-3 my-3 me-0 d-flex form-check"
+                        style={{ marginLeft: "5rem", width: "75%" }}
+                    >
                         <input
                             type="checkbox"
                             className="form-check-input pl-5"
@@ -126,11 +135,14 @@ function ProfileLogin(props) {
                             Remember me
                         </label>
                     </div>
+                    <div className="buffer">
+                        <br />
+                    </div>
                     <Link
                         to="/profile"
                         style={{
                             width: "auto",
-                            marginLeft: "0.70rem",
+                            marginLeft: "5.75rem",
                         }}
                         className={`btn ml-auto btn-${
                             props.mode === "dark" ? "light" : "primary"

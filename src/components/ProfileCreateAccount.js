@@ -36,7 +36,10 @@ function ProfileCreateAccount(props) {
                         width: "40%",
                     }}
                 >
-                    <div className="mb-3">
+                    <div
+                        className="mb-3"
+                        style={{ width: "75%", margin: "auto" }}
+                    >
                         <label
                             htmlFor="exampleInputEmail1"
                             className={`form-label text-${
@@ -67,7 +70,10 @@ function ProfileCreateAccount(props) {
                             }`}
                         ></div>
                     </div>
-                    <div className="password-form">
+                    <div
+                        className="password-form"
+                        style={{ width: "75%", margin: "auto" }}
+                    >
                         <label
                             htmlFor="exampleInputPassword1"
                             className={`form-label quicksand-medium-500 text-${
@@ -112,7 +118,10 @@ function ProfileCreateAccount(props) {
                             </button>
                         </div>
                     </div>
-                    <div className="mb-3 my-3 d-flex form-check">
+                    <div
+                        className="mb-3 my-3 d-flex form-check"
+                        style={{ marginLeft: "5rem", width: "75%" }}
+                    >
                         <input
                             type="checkbox"
                             className="form-check-input pl-5"
@@ -136,11 +145,14 @@ function ProfileCreateAccount(props) {
                             Accept Terms & Conditions
                         </label>
                     </div>
+                    <div className="buffer">
+                        <br />
+                    </div>
                     <Link
                         to="/profile"
                         style={{
                             width: "auto",
-                            marginLeft: "0.70rem",
+                            marginLeft: "5.75rem",
                         }}
                         className={`btn my-3 ml-auto btn-${
                             props.mode === "dark" ? "light" : "primary"
